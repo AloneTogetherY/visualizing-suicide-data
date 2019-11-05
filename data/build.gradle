@@ -1,0 +1,53 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.visualization'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+
+task fatJar(type: Jar) {
+    from('src/main/resources') {
+        include 'data/*.csv'
+        include 'data/*.json'
+
+    }
+    manifest {
+        attributes 'Implementation-Title': 'Data-Visualization',
+                'Implementation-Version': version,
+                'Main-Class': 'com.visualization.data.DataApplication'
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    //ibmcloud cf push -k 1G -m 256M -p data-0.0.1-SNAPSHOT.jar dataVisualization
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
+    implementation 'org.springframework:spring-web'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'com.opencsv:opencsv:4.5'
+    implementation 'com.jayway.jsonpath:json-path:2.4.0'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.2'
+
+
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}

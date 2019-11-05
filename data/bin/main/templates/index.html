@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" data-th-href="@{css/materialize.css}"/>
+<link rel="stylesheet" data-th-href="@{css/style.css}"/>
+<style type="text/css" th:inline="text">
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url([[@{iconfont/MaterialIcons-Regular.eot}]]);
+        /* For IE6-8 */
+        src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url([[@{iconfont//MaterialIcons-Regular.woff2}]]) format('woff2'),
+        url([[@{iconfont/MaterialIcons-Regular.woff}]]) format('woff'),
+        url([[@{iconfont/MaterialIcons-Regular.ttf}]]) format('truetype');
+    }
+
+    #chartdiv {
+        width: 100%;
+        height: 400px;
+    }
+</style>
+
+<head>
+
+    <script type="text/javascript" th:src="@{js/d3.v353.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/topojson.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/datamaps.world.hires.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{js/chart-loader.js}"></script>
+</head>
+
+<body>
+<div class="navbar-fixed">
+
+    <nav class="blue z-depth-1" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Visualization
+            of suicide rates</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn-small transparent countries-reference-btn" href="/countries">View countries</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<br/><br/>
+<main>
+    <div id="app" class="container">
+        <div>
+            <!--  <a class="btn-floating btn-large waves-effect waves-light red" v-on:click="visualizeChart(normalized_rate)">Plot</a>                 <canvas id="myChart" width="400" height="400"></canvas>
+-->
+            <div class="card z-depth-3" id="diagrams">
+
+                <div class="row">
+                    <a style="margin: 5px 0 0 5px !important;" id="refresh-btn"
+                       class="refresh-button btn-floating btn-small green black-text waves-effect">
+                        <i class="material-icons right">replay</i>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col s6">
+                        <h5>Introduction</h5>
+                        According to our data-set <b class="orange-text">6,732,817</b> people have committed suicide since 1985
+                        until 2015.
+                        This website focuses on the suicide statistics worldwide.
+                        The data-set used to visualize this website as well as the countries website is pretty limited. That's why it is hard to say if the statistics
+                        on the page really represent the global population and it's suicide trends. Many African countries are missing completely. Big countries such as
+                        China and India are also not available. Despite the lack of data, this website attempts to provide interesting insights on suicide deaths across the world from 1985 until 2015.
+                        <br>The diagram on the right visualizes the global suicide trend from 1985 till 2015.
+
+                    </div>
+                    <div class="col s6">
+                        <div id="trend_chart"></div>
+                    </div>
+                    <div class="col s12">
+                        <br>
+                        The following diagrams below examine other variables in the data-set such as continent, gender and age. The donut-chart on the left serves as the starting point
+                        for the interaction. The user selects a year on the donut-chart and the other diagrams change accordingly. This means that each diagram visualizes the variables mentioned above for the selected year.
+                        If the user does not select a year, all the suicide data from 1985 till 2015 will be shown.
+                        The map on the right visualizes the countries which are affected for the selected year. Each country has a certain contrast according to the number of suicides in that year.
+                        The higher the number of suicides the higher the contrast of that country.
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s4 m4 l4">
+                        <div id="donutchart" style="position:relative; width:  100%; height: 500px; left: 100px">
+                        </div>
+                        <div id="labelOverlay" style="position:relative; width:  50%; height: 50%; top: -200px; left: 120px">
+                            <p class="used-size">Total</p><br/>
+                            <p class="total-size" id="suicideNumberId"></p>
+                        </div>
+
+                    </div>
+                    <div class="col s8 m8 l8">
+                        <div class="right" id="regions_div" style="position:relative; width: 80%; height: 70%;">
+                        </div>
+
+                        <div class="chip center col s1 m1 l1" id="info-title1" style="position:relative; width:  40%; height: 35%;"> No year or country selected</div>
+                        <br/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 l6" style="height: 70% !important;">
+                        <div id="bar_chart"></div>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <div class="right" id="chartdiv"></div>
+                    </div>
+                    <br/><br/><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</main>
+<footer class="page-footer grey">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <a href="#top" class="right-align grey-text text-lighten-4">
+                    <i class="material-icons right">ic_arrow_upward</i>
+                </a>
+                <h5 class="white-text">Visualization | Human-Centered Computing| Reutlingen University</h5>
+                <p class="grey-text text-lighten-4">This project visualizes the suicide rates from 1985 until 2015
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Made by <span class="orange-text text-lighten-3">Yoan Dimitrov, Marc Keilmann, Alexander</span></p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" th:src="@{js/jquery-3.1.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/materialize.min.js}"></script>
+<script type="text/javascript" th:src="@{js/init.js}"></script>
+<script type="text/javascript" th:src="@{js/amcharts/core.js}"></script>
+<script type="text/javascript" th:src="@{js/amcharts/charts.js}"></script>
+
+<script type="text/javascript" th:src="@{js/amcharts/kelly.js}"></script>
+<script type="text/javascript" th:src="@{js/amcharts/animated.js}"></script>
+
+<script type="text/javascript" th:src="@{js/yearqueries/global_trend_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/male_female_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/suicides_per_year_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/age_group_query.js}"></script>
+
+
+<script type="text/javascript">
+    var selectedYear = "1985 - 2015";
+
+
+    // Create the data table.
+    function reset() {
+        var element = document.getElementById('info-title1');
+        element.innerHTML = "No year selected";
+        element.classList.remove("z-depth-1");
+        var event = new CustomEvent("openDataMap", {"detail": true});
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+        map.updateChoropleth(null, {reset: true})
+        selectedYear = "1985 - 2015";
+        google.charts.setOnLoadCallback(drawBarChart);
+        document.dispatchEvent(new CustomEvent("updateBarRadialLayout"));
+    }
+
+    document.getElementById("refresh-btn").addEventListener("click", reset);
+
+    google.charts.load("current", {
+        packages: ["corechart", "line"]
+    });
+    google.charts.setOnLoadCallback(drawBarChart);
+    google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(drawBasic);
+
+    // function drawBubbleChart() {
+    //     var data = google.visualization.arrayToDataTable([
+    //         ['ID', 'Year', 'suicides/100k', 'Region', 'Population'],
+    //         ['Gen X', 1985, 1.67, 'North America', 30],
+    //         ['Gen Z', 1990, 1.67, 'North America', 40],
+    //         ['Sil', 1955, 1.67, 'North America', 20],
+    //         ['Boo', 2010, 1.67, 'North America', 50],
+    //         ['Mil', 2000, 1.67, 'North America', 60],
+    //         ['Gen X', 1950, 1.67, 'Europe', 20],
+    //         ['Gen Z', 1990, 1.67, 'Europe', 30],
+    //         ['Sil', 1995, 1.67, 'Europe', 10],
+    //         ['Boo', 2000, 1.67, 'Europe', 40],
+    //         ['Mil', 2010, 1.67, 'Europe', 50],
+    //         ['DEU', 79.84, 1.36, 'Europe', 81902307],
+    //         ['DNK', 78.6, 1.84, 'Europe', 55230950],
+    //         ['EGY', 42.73, 2.78, 'Africa', 79716203],
+    //         ['GBR', 80.05, 2, 'Oceania', 61801570],
+    //         ['IRN', 72.49, 1.7, 'Asia', 73137148],
+    //         ['IRQ', 47.09, 4.77, 'Asia', 31090763],
+    //         ['ISR', 50.55, 2.96, 'South', 7485600],
+    //         ['RUS', 68.6, 1.54, 'Europe', 141850000],
+    //         ['USA', 78.09, 2.05, 'North America', 307007000]
+    //     ]);
+    //     var options = {
+    //         title: 'Correlation between suicides per 100k population and GDP in ' + selectedYear,
+    //         hAxis: { title: "Year" },
+    //         vAxis: { title: 'Suicides per 100k population' },
+    //         titleTextStyle: {
+    //             fontSize: 15
+    //         },
+    //         width: 600,
+    //         height: 400,
+    //         bubble: {
+    //             textStyle: {
+    //                 fontSize: 12,
+    //                 fontName: 'Times-Roman',
+    //                 color: 'black',
+    //                 auraColor: "none",
+    //                 bold: true
+    //             }
+    //         }
+    //     };
+    //     var chart = new google.visualization.BubbleChart(document.getElementById('bubbleChart'));
+    //     chart.draw(data, options);
+    //}
+    // Callback that creates and populates a data table,
+    // instantiates the chart, passes in the data and draws it.
+
+    let map = new Datamap({
+        element: document.getElementById('regions_div'),
+        responsive: true,
+        fills: {
+            AFFECTED: 'green',
+            defaultFill: 'grey'
+        },
+        geographyConfig: {
+            highlightFillColor: '#f3f1f1',
+            popupTemplate: function (geo, data) {
+                return '<div class="hoverinfo"><strong>' +
+                    '<table class="table-popup" style="width:300px;" >' +
+                    '<tr><td>Country:</td><td>' + geo.properties.name + '</td></tr>' +
+                    '<tr><td>Number of suicides:</td><td>' + data.suicide_rate + '</td></tr>' +
+                    '<tr><td>Female / Male quota:</td><td>' + data.female + ' / ' + data.male + '</td></tr>' +
+                    '<tr><td>5-14 years:</td><td>' + data.fiveYearsAgeGroup + '</td></tr>' +
+                    '<tr><td>15-24 years:</td><td>' + data.fifteenYearsAgeGroup + '</td></tr>' +
+                    '<tr><td>25-34 years:</td><td>' + data.twentyYearsAgeGroup + '</td></tr>' +
+                    '<tr><td>35-54 years:</td><td>' + data.thirtyYearsAgeGroup + '</td></tr>' +
+                    '<tr><td>55-74 years:</td><td>' + data.fiftyYearsAgeGroup + '</td></tr>' +
+                    '<tr><td>75+ years:</td><td>' + data.seventyAgeGroup + '</td></tr>' +
+                    '</table>' + '</div>';
+            }
+        }
+    });
+    var testlist = ["BRA", "IRL", "USA", "GBR", "DEU", "DZA", "RUS", "AUT", "CAN", "AFG", "ALB",
+        "CHN", "IND", "FRA", "AUS", "CUB", "FIN", "ISL", "JPN", "KOR", "NOR", "POL", "TUR",
+        "ATG", "ARM", "ABW", "AZE", "BHS", "BHR", "BRB", "BLR", "BEL", "BLZ",
+        "BIH", "BGR", "CPV", "CHL", "COL", "CRI", "HRV", "CUB", "CYP", "CZE", "DNK", "DMA",
+        "ECU", "SLV", "EST", "FJI", "GEO", "GRC", "GRD", "GTM",
+        "GUY", "HUN", "ISR", "ITA", "JAM", "KAZ", "KIR", "KWT",
+        "KGZ", "LVA", "LTU", "LUX", "MDV", "MLT", "MUS", "MEX",
+        "MNE", "NLD", "NZL", "NIC", "NOR", "OMN", "PAN", "PRY",
+        "PHL", "PRT", "PRI", "QAT", "ROU", "KNA", "LCA", "VCT",
+        "SMR", "SRB", "SYC", "SGP", "SVK", "SVN", "ZAF", "ESP",
+        "LKA", "SUR", "SWE", "CHE", "THA", "TTO", "TKM", "UKR",
+        "ARE", "URY", "UZB"];
+    var dicTest = {};
+    document.addEventListener("openDataMap", function (e) {
+        console.log(e.detail);
+        map.updateChoropleth({
+            IRL: {
+                fillKey: 'AFFECTED',
+                suicide_rate: 200122,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            },
+            "USA": {
+                fillKey: 'AFFECTED',
+                suicide_rate: 10381,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            },
+            GBR: {
+                fillKey: 'AFFECTED',
+                suicide_rate: 103381,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            },
+            DEU: {
+                fillKey: 'AFFECTED',
+                suicide_rate: 3381,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            }, DZA: {
+                fillKey: 'AFFECTED',
+                suicide_rate: 3381,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            },
+            PRK: {
+                fillKey: 'RED',
+                suicide_rate: 3381,
+                male: '22.2%',
+                female: '77.8%',
+                fiveYearsAgeGroup: 4,
+                fifteenYearsAgeGroup: 399,
+                twentyYearsAgeGroup: 531,
+                thirtyYearsAgeGroup: 767,
+                fiftyYearsAgeGroup: 212,
+                seventyAgeGroup: 921
+            }
+        });
+    });
+    window.addEventListener('resize', function () {
+        map.resize();
+    });
+</script>
+
+</body>
+
+
+</html>

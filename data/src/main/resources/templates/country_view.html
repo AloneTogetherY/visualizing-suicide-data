@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html style="height: 70%" lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" data-th-href="@{css/materialize.css}"/>
+<link rel="stylesheet" data-th-href="@{css/style.css}"/>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css" th:inline="text">
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url([[@{iconfont/MaterialIcons-Regular.eot}]]); /* For IE6-8 */
+            src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url([[@{iconfont//MaterialIcons-Regular.woff2}]]) format('woff2'),
+            url([[@{iconfont/MaterialIcons-Regular.woff}]]) format('woff'),
+            url([[@{iconfont/MaterialIcons-Regular.ttf}]]) format('truetype');
+        }
+    </style>
+</head>
+<body style="height: 100%; width: 100%">
+<div class="navbar-fixed">
+
+    <nav class="blue z-depth-1" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center" title="View countries page">Visualization of suicide rates</a>
+        </div>
+    </nav>
+</div>
+
+<div style="margin-top: 80px !important; margin-bottom: 20px !important;" class="container">
+    <div class="card-panel" style="padding: 0 !important;">
+        <a id="countries-refresh-btn"
+           class="countries-btn btn-floating btn-small green black-text waves-effect">
+            <i class="material-icons center">replay</i>
+        </a>
+        <div class="row">
+            <div class=" col s12">
+                <br/>
+                <blockquote>
+                    This website concentrates on the suicide rate within a country, whereas the other website focuses on the suicide statistics worldwide.
+                    The page starts with the visualization of the suicides for a selected country for all available years between 1985 and 2015. The GDP per capita per year for the selected country is visualized on the x-axis.
+                    Only countries with sufficient data will be visualized. Some years are skipped occasionally because of missing data. 19 countries were excluded completely from the visualization because of insufficient data.
+                    The other diagrams visualize the gender differences as well as age differences by country. All diagrams are interactive and allow the user to hover on values as well as to filter out unwanted details e.g. an age group or a gender.
+                    <br/>
+                    <br> <b>A few interesting insights:</b><br>
+                    There is a high positive correlation between year and GDP per capita of each country. As time goes by, the GDP per capita increases.
+                    <br>The impact of the financial crisis on the GDP per capita in 2008 is visible for almost every country.
+                    <br>The Republic of South Korea has the highest upward suicide trend throughout the years.
+                    <br>Guyana also has a really high upward suicide trend throughout the years.
+                    <br>Estonia has the highest downward suicide trend throughout the years.
+                    <br>In comparison to other parts of the world, Eastern European countries have really high suicide rates throughout the years.
+                    <br>In most countries the suicide rate increases on average with age.
+                    <br>Male suicide rates are higher than those of females in all countries. However Asian countries have the smallest difference between male and female suicide deaths.
+                </blockquote>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+<br/>
+<div class="container">
+
+    <div class="row">
+        <div id="container" style="width: 100%; min-height: 600px"></div>
+    </div>
+</div>
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="col s4"></div>
+        <div class="col s4 chip center amber lighten-2" id="selectedCountry"> country</div>
+        <div class="col s4"></div>
+
+    </div>
+</div>
+<div class="container">
+    <div id="bar-container" style="float:left; width: 50%; min-height: 600px"></div>
+
+    <div id="age-container" style="width: 50%; min-height: 600px; float:left"></div>
+</div>
+<br/>
+<br/>
+<br/>
+
+<script type="text/javascript" th:src="@{js/common/echarts/echarts.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/echarts/echarts-gl.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/echarts/ecStat.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/echarts/dataTool.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/echarts/bmap.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/echarts/simplex.js}"></script>
+<script type="text/javascript" th:src="@{js/common/cm/jquery-3.1.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/cm/materialize.min.js}"></script>
+<script type="text/javascript" th:src="@{js/countryqueries/echarts_access.js}"></script>
+<script type="text/javascript" th:src="@{js/countryqueries/echarts_access_util.js}"></script>
+
+</body>
+<footer class="page-footer grey">
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5 class="white-text">Visualization | Human-Centered Computing| Reutlingen University</h5>
+                <p class="grey-text text-lighten-4">This project visualizes the suicide rates from 1985 until 2015.
+                    The data-set can be found <a
+                            class="orange-text text-lighten-3"
+                            href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016" target="_blank">here</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Made by <span class="orange-text text-lighten-3">Yoan Dimitrov with a few contributions by Marc Keilmann and Alexander Kahabka</span></p>
+        </div>
+    </div>
+</footer>
+</html>

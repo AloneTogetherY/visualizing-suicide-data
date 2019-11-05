@@ -1,0 +1,110 @@
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.chip {
+    width: 300px !important;
+}
+
+tspan {
+    font-weight: bold !important;
+}
+
+footer {
+    background: transparent url(../images/nav.jpg);
+    bottom: 0 !important;
+}
+
+#labelOverlay {
+    width: 90px;
+    height: 45px;
+    position: absolute;
+    top: 630px;
+    left: 550px;
+    text-align: center;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+#labelOverlay p {
+    line-height: 0.3;
+    padding: 0;
+    margin: 8px;
+}
+
+#labelOverlay p.used-size {
+    line-height: 0.2;
+    font-size: 20pt;
+    color: #2b2b2b;
+}
+
+#labelOverlay p.total-size {
+    line-height: 0.5;
+    font-size: 12pt;
+    color: #8e8e8e;
+}
+
+body { /*necessary for footer*/
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.z-depth-1 {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.07);
+}
+
+.table-popup td, table th {
+    padding: 0; /* 'cellpadding' equivalent */
+}
+
+/*
+ * Common Definitions
+ */
+.blue {
+    background: transparent url(../images/nav.jpg);
+    background-size: 100%;
+    position: fixed;
+}
+
+blockquote {
+    border-left: 5px solid #348a93 !important;
+}
+
+.info-button, .refresh-button {
+    background: transparent url(../images/nav.jpg) !important;
+}
+
+.countries-btn {
+    margin: 3px 0 0 3px !important;
+    background: transparent url(../images/nav.jpg) !important;
+    vertical-align: middle;
+}
+
+main {
+    flex: 1 0 auto;
+}
+

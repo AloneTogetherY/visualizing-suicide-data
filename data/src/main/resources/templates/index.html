@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" data-th-href="@{css/materialize.css}"/>
+<link rel="stylesheet" data-th-href="@{css/style.css}"/>
+<style type="text/css" th:inline="text">
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url([[@{iconfont/MaterialIcons-Regular.eot}]]);
+        /* For IE6-8 */
+        src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url([[@{iconfont//MaterialIcons-Regular.woff2}]]) format('woff2'),
+        url([[@{iconfont/MaterialIcons-Regular.woff}]]) format('woff'),
+        url([[@{iconfont/MaterialIcons-Regular.ttf}]]) format('truetype');
+    }
+
+    #chartdiv {
+        width: 100%;
+        height: 400px;
+    }
+</style>
+
+<head>
+    <script type="text/javascript" th:src="@{js/common/cm/chart-loader.js}"></script>
+</head>
+
+<body>
+<div class="navbar-fixed">
+
+    <nav class="blue z-depth-1" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Visualization
+            of suicide rates</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn-small transparent countries-reference-btn" href="/countries">View countries</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<br/><br/>
+<main>
+    <div id="app" class="container">
+        <div>
+            <!--  <a class="btn-floating btn-large waves-effect waves-light red" v-on:click="visualizeChart(normalized_rate)">Plot</a>                 <canvas id="myChart" width="400" height="400"></canvas>
+-->
+            <div class="card z-depth-3" id="diagrams">
+
+                <div class="row">
+                    <a style="margin: 5px 0 0 5px !important;" id="refresh-btn"
+                       class="refresh-button btn-floating btn-small green black-text waves-effect">
+                        <i class="material-icons right">replay</i>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="col s6">
+                        <h5>Introduction</h5>
+                        According to our data-set <b class="orange-text">6,732,817</b> people have committed suicide since 1985
+                        until 2015.
+                        This website focuses on the suicide statistics worldwide.
+                        The data-set used to visualize this website as well as the countries website is pretty limited. That's why it is hard to say if the statistics
+                        on the page really represent the global population and it's suicide trends. Many African countries are missing completely. Big countries such as
+                        China and India are also not available. Despite the lack of data, this website attempts to provide interesting insights on suicide deaths across the world from 1985 until 2015.
+                        <br>The diagram on the right visualizes the global suicide trend from 1985 till 2015.
+
+                    </div>
+                    <div class="col s6">
+                        <div id="trend_chart"></div>
+                    </div>
+                    <div class="col s12">
+                        <br>
+                        The following diagrams below examine other variables in the data-set such as continent, gender and age. The donut-chart below serves as the starting point
+                        for the interaction. The user selects a year on the donut-chart and the other diagrams change accordingly. This means that each diagram visualizes the variables mentioned above for the selected year.
+                        If the user does not select a year, all the suicide data from 1985 till 2015 will be shown.
+                        The world map visualizes the countries which are affected for the selected year. Each country has a certain contrast according to the number of suicides in that year.
+                        The higher the number of suicides the higher the contrast of that country.
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 0 !important;">
+
+                    <div id="donutchart" style="min-width: 700px; min-height: 400px;">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="dataMap" style="height: 90vh;">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="valign-wrapper chip center" id="info-title1"> No year or country selected</div>
+                    <div class="col s2"></div>
+                </div>
+                <div class="row">
+                    <div class="col s6 m6 l6" style="height: 70% !important;">
+                        <div id="bar_chart"></div>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <div class="right" id="chartdiv"></div>
+                    </div>
+                    <br/><br/><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</main>
+<footer class="page-footer grey">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <a href="#top" class="right-align grey-text text-lighten-4">
+                    <i class="material-icons right">ic_arrow_upward</i>
+                </a>
+                <h5 class="white-text">Visualization | Human-Centered Computing| Reutlingen University</h5>
+                <p class="grey-text text-lighten-4">This project visualizes the suicide rates from 1985 until 2015.
+                    The data-set can be found <a
+                            class="orange-text text-lighten-3"
+                            href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016" target="_blank">here</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <p>Made by <span class="orange-text text-lighten-3">Yoan Dimitrov with a few contributions by Marc Keilmann and Alexander Kahabka</span></p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" th:src="@{js/common/cm/jquery-3.1.1.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/cm/materialize.min.js}"></script>
+<script type="text/javascript" th:src="@{js/common/cm/init.js}"></script>
+<script type="text/javascript" th:src="@{js/common/amcharts/core.js}"></script>
+<script type="text/javascript" th:src="@{js/common/amcharts/charts.js}"></script>
+
+<script type="text/javascript" th:src="@{js/common/amcharts/kelly.js}"></script>
+<script type="text/javascript" th:src="@{js/common/amcharts/animated.js}"></script>
+<script type="text/javascript" th:src="@{js/common/cm/plotly.js}"></script>
+
+<script type="text/javascript" th:src="@{js/yearqueries/global_trend_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/male_female_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/suicides_per_year_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/age_group_query.js}"></script>
+<script type="text/javascript" th:src="@{js/yearqueries/map_query.js}"></script>
+
+<script type="text/javascript">
+
+
+    let selectedYear = "1985 - 2015";
+
+
+    // Create the data table.
+    function reset() {
+        var element = document.getElementById('info-title1');
+        element.innerHTML = "No year selected";
+        element.classList.remove("z-depth-1");
+        google.charts.load("current", {
+            packages: ["corechart"]
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        selectedYear = "1985 - 2015";
+        google.charts.setOnLoadCallback(drawBarChart);
+        document.dispatchEvent(new CustomEvent("updateBarRadialLayout"));
+
+        Plotly.newPlot(dataMap, initData, layout, {
+            showLink: false, displayModeBar: false, scrollZoom: false, responsive: true
+        });
+    }
+
+    document.getElementById("refresh-btn").addEventListener("click", reset);
+
+    google.charts.load("current", {
+        packages: ["corechart", "line"]
+    });
+    google.charts.setOnLoadCallback(drawBarChart);
+    google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(drawBasic);
+
+
+</script>
+
+</body>
+
+
+</html>

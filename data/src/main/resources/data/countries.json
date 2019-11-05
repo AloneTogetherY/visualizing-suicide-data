@@ -1,0 +1,1502 @@
+[
+  {
+    "area": 652230.0,
+    "gini": 27.8,
+    "name": "Afghanistan",
+    "region": "Asia"
+  },
+  {
+    "area": 1580.0,
+    "gini": null,
+    "name": "Åland Islands",
+    "region": "Europe"
+  },
+  {
+    "area": 28748.0,
+    "gini": 34.5,
+    "name": "Albania",
+    "region": "Europe"
+  },
+  {
+    "area": 2381741.0,
+    "gini": 35.3,
+    "name": "Algeria",
+    "region": "Africa"
+  },
+  {
+    "area": 199.0,
+    "gini": null,
+    "name": "American Samoa",
+    "region": "Oceania"
+  },
+  {
+    "area": 468.0,
+    "gini": null,
+    "name": "Andorra",
+    "region": "Europe"
+  },
+  {
+    "area": 1246700.0,
+    "gini": 58.6,
+    "name": "Angola",
+    "region": "Africa"
+  },
+  {
+    "area": 91.0,
+    "gini": null,
+    "name": "Anguilla",
+    "region": "Americas"
+  },
+  {
+    "area": 14000000,
+    "gini": null,
+    "name": "Antarctica",
+    "region": "Polar"
+  },
+  {
+    "area": 442.0,
+    "gini": null,
+    "name": "Antigua and Barbuda",
+    "region": "Americas"
+  },
+  {
+    "area": 2780400.0,
+    "gini": 44.5,
+    "name": "Argentina",
+    "region": "Americas"
+  },
+  {
+    "area": 29743.0,
+    "gini": 30.9,
+    "name": "Armenia",
+    "region": "Asia"
+  },
+  {
+    "area": 180.0,
+    "gini": null,
+    "name": "Aruba",
+    "region": "Americas"
+  },
+  {
+    "area": 7692024.0,
+    "gini": 30.5,
+    "name": "Australia",
+    "region": "Oceania"
+  },
+  {
+    "area": 83871.0,
+    "gini": 26.0,
+    "name": "Austria",
+    "region": "Europe"
+  },
+  {
+    "area": 86600.0,
+    "gini": 33.7,
+    "name": "Azerbaijan",
+    "region": "Asia"
+  },
+  {
+    "area": 13943.0,
+    "gini": null,
+    "name": "Bahamas",
+    "region": "Americas"
+  },
+  {
+    "area": 765.0,
+    "gini": null,
+    "name": "Bahrain",
+    "region": "Asia"
+  },
+  {
+    "area": 147570.0,
+    "gini": 32.1,
+    "name": "Bangladesh",
+    "region": "Asia"
+  },
+  {
+    "area": 430.0,
+    "gini": null,
+    "name": "Barbados",
+    "region": "Americas"
+  },
+  {
+    "area": 207600.0,
+    "gini": 26.5,
+    "name": "Belarus",
+    "region": "Europe"
+  },
+  {
+    "area": 30528.0,
+    "gini": 33.0,
+    "name": "Belgium",
+    "region": "Europe"
+  },
+  {
+    "area": 22966.0,
+    "gini": 53.1,
+    "name": "Belize",
+    "region": "Americas"
+  },
+  {
+    "area": 112622.0,
+    "gini": 38.6,
+    "name": "Benin",
+    "region": "Africa"
+  },
+  {
+    "area": 54.0,
+    "gini": null,
+    "name": "Bermuda",
+    "region": "Americas"
+  },
+  {
+    "area": 38394.0,
+    "gini": 38.1,
+    "name": "Bhutan",
+    "region": "Asia"
+  },
+  {
+    "area": 1098581.0,
+    "gini": 56.3,
+    "name": "Bolivia (Plurinational State of)",
+    "region": "Americas"
+  },
+  {
+    "area": 294.0,
+    "gini": null,
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "region": "Americas"
+  },
+  {
+    "area": 51209.0,
+    "gini": 36.2,
+    "name": "Bosnia and Herzegovina",
+    "region": "Europe"
+  },
+  {
+    "area": 582000.0,
+    "gini": 61.0,
+    "name": "Botswana",
+    "region": "Africa"
+  },
+  {
+    "area": 49.0,
+    "gini": null,
+    "name": "Bouvet Island",
+    "region": ""
+  },
+  {
+    "area": 8515767.0,
+    "gini": 54.7,
+    "name": "Brazil",
+    "region": "Americas"
+  },
+  {
+    "area": 60.0,
+    "gini": null,
+    "name": "British Indian Ocean Territory",
+    "region": "Africa"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "United States Minor Outlying Islands",
+    "region": "Americas"
+  },
+  {
+    "area": 151.0,
+    "gini": null,
+    "name": "Virgin Islands (British)",
+    "region": "Americas"
+  },
+  {
+    "area": 346.36,
+    "gini": null,
+    "name": "Virgin Islands (U.S.)",
+    "region": "Americas"
+  },
+  {
+    "area": 5765.0,
+    "gini": null,
+    "name": "Brunei Darussalam",
+    "region": "Asia"
+  },
+  {
+    "area": 110879.0,
+    "gini": 28.2,
+    "name": "Bulgaria",
+    "region": "Europe"
+  },
+  {
+    "area": 272967.0,
+    "gini": 39.8,
+    "name": "Burkina Faso",
+    "region": "Africa"
+  },
+  {
+    "area": 27834.0,
+    "gini": 33.3,
+    "name": "Burundi",
+    "region": "Africa"
+  },
+  {
+    "area": 181035.0,
+    "gini": 37.9,
+    "name": "Cambodia",
+    "region": "Asia"
+  },
+  {
+    "area": 475442.0,
+    "gini": 38.9,
+    "name": "Cameroon",
+    "region": "Africa"
+  },
+  {
+    "area": 9984670.0,
+    "gini": 32.6,
+    "name": "Canada",
+    "region": "Americas"
+  },
+  {
+    "area": 4033.0,
+    "gini": 50.5,
+    "name": "Cabo Verde",
+    "region": "Africa"
+  },
+  {
+    "area": 264.0,
+    "gini": null,
+    "name": "Cayman Islands",
+    "region": "Americas"
+  },
+  {
+    "area": 622984.0,
+    "gini": 56.3,
+    "name": "Central African Republic",
+    "region": "Africa"
+  },
+  {
+    "area": 1284000.0,
+    "gini": 39.8,
+    "name": "Chad",
+    "region": "Africa"
+  },
+  {
+    "area": 756102.0,
+    "gini": 52.1,
+    "name": "Chile",
+    "region": "Americas"
+  },
+  {
+    "area": 9640011.0,
+    "gini": 47.0,
+    "name": "China",
+    "region": "Asia"
+  },
+  {
+    "area": 135.0,
+    "gini": null,
+    "name": "Christmas Island",
+    "region": "Oceania"
+  },
+  {
+    "area": 14.0,
+    "gini": null,
+    "name": "Cocos (Keeling) Islands",
+    "region": "Oceania"
+  },
+  {
+    "area": 1141748.0,
+    "gini": 55.9,
+    "name": "Colombia",
+    "region": "Americas"
+  },
+  {
+    "area": 1862.0,
+    "gini": 64.3,
+    "name": "Comoros",
+    "region": "Africa"
+  },
+  {
+    "area": 342000.0,
+    "gini": 47.3,
+    "name": "Congo",
+    "region": "Africa"
+  },
+  {
+    "area": 2344858.0,
+    "gini": null,
+    "name": "Congo (Democratic Republic of the)",
+    "region": "Africa"
+  },
+  {
+    "area": 236.0,
+    "gini": null,
+    "name": "Cook Islands",
+    "region": "Oceania"
+  },
+  {
+    "area": 51100.0,
+    "gini": 50.7,
+    "name": "Costa Rica",
+    "region": "Americas"
+  },
+  {
+    "area": 56594.0,
+    "gini": 33.7,
+    "name": "Croatia",
+    "region": "Europe"
+  },
+  {
+    "area": 109884.0,
+    "gini": null,
+    "name": "Cuba",
+    "region": "Americas"
+  },
+  {
+    "area": 444.0,
+    "gini": null,
+    "name": "Curaçao",
+    "region": "Americas"
+  },
+  {
+    "area": 9251.0,
+    "gini": null,
+    "name": "Cyprus",
+    "region": "Europe"
+  },
+  {
+    "area": 78865.0,
+    "gini": 26.0,
+    "name": "Czech Republic",
+    "region": "Europe"
+  },
+  {
+    "area": 43094.0,
+    "gini": 24.0,
+    "name": "Denmark",
+    "region": "Europe"
+  },
+  {
+    "area": 23200.0,
+    "gini": 40.0,
+    "name": "Djibouti",
+    "region": "Africa"
+  },
+  {
+    "area": 751.0,
+    "gini": null,
+    "name": "Dominica",
+    "region": "Americas"
+  },
+  {
+    "area": 48671.0,
+    "gini": 47.2,
+    "name": "Dominican Republic",
+    "region": "Americas"
+  },
+  {
+    "area": 276841.0,
+    "gini": 49.3,
+    "name": "Ecuador",
+    "region": "Americas"
+  },
+  {
+    "area": 1002450.0,
+    "gini": 30.8,
+    "name": "Egypt",
+    "region": "Africa"
+  },
+  {
+    "area": 21041.0,
+    "gini": 48.3,
+    "name": "El Salvador",
+    "region": "Americas"
+  },
+  {
+    "area": 28051.0,
+    "gini": null,
+    "name": "Equatorial Guinea",
+    "region": "Africa"
+  },
+  {
+    "area": 117600.0,
+    "gini": null,
+    "name": "Eritrea",
+    "region": "Africa"
+  },
+  {
+    "area": 45227.0,
+    "gini": 36.0,
+    "name": "Estonia",
+    "region": "Europe"
+  },
+  {
+    "area": 1104300.0,
+    "gini": 29.8,
+    "name": "Ethiopia",
+    "region": "Africa"
+  },
+  {
+    "area": 12173.0,
+    "gini": null,
+    "name": "Falkland Islands (Malvinas)",
+    "region": "Americas"
+  },
+  {
+    "area": 1393.0,
+    "gini": null,
+    "name": "Faroe Islands",
+    "region": "Europe"
+  },
+  {
+    "area": 18272.0,
+    "gini": 42.8,
+    "name": "Fiji",
+    "region": "Oceania"
+  },
+  {
+    "area": 338424.0,
+    "gini": 26.9,
+    "name": "Finland",
+    "region": "Europe"
+  },
+  {
+    "area": 640679.0,
+    "gini": 32.7,
+    "name": "France",
+    "region": "Europe"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "French Guiana",
+    "region": "Americas"
+  },
+  {
+    "area": 4167.0,
+    "gini": null,
+    "name": "French Polynesia",
+    "region": "Oceania"
+  },
+  {
+    "area": 7747.0,
+    "gini": null,
+    "name": "French Southern Territories",
+    "region": "Africa"
+  },
+  {
+    "area": 267668.0,
+    "gini": 41.5,
+    "name": "Gabon",
+    "region": "Africa"
+  },
+  {
+    "area": 11295.0,
+    "gini": null,
+    "name": "Gambia",
+    "region": "Africa"
+  },
+  {
+    "area": 69700.0,
+    "gini": 41.3,
+    "name": "Georgia",
+    "region": "Asia"
+  },
+  {
+    "area": 357114.0,
+    "gini": 28.3,
+    "name": "Germany",
+    "region": "Europe"
+  },
+  {
+    "area": 238533.0,
+    "gini": 42.8,
+    "name": "Ghana",
+    "region": "Africa"
+  },
+  {
+    "area": 6.0,
+    "gini": null,
+    "name": "Gibraltar",
+    "region": "Europe"
+  },
+  {
+    "area": 131990.0,
+    "gini": 34.3,
+    "name": "Greece",
+    "region": "Europe"
+  },
+  {
+    "area": 2166086.0,
+    "gini": null,
+    "name": "Greenland",
+    "region": "Americas"
+  },
+  {
+    "area": 344.0,
+    "gini": null,
+    "name": "Grenada",
+    "region": "Americas"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Guadeloupe",
+    "region": "Americas"
+  },
+  {
+    "area": 549.0,
+    "gini": null,
+    "name": "Guam",
+    "region": "Oceania"
+  },
+  {
+    "area": 108889.0,
+    "gini": 55.9,
+    "name": "Guatemala",
+    "region": "Americas"
+  },
+  {
+    "area": 78.0,
+    "gini": null,
+    "name": "Guernsey",
+    "region": "Europe"
+  },
+  {
+    "area": 245857.0,
+    "gini": 39.4,
+    "name": "Guinea",
+    "region": "Africa"
+  },
+  {
+    "area": 36125.0,
+    "gini": 35.5,
+    "name": "Guinea-Bissau",
+    "region": "Africa"
+  },
+  {
+    "area": 214969.0,
+    "gini": 44.5,
+    "name": "Guyana",
+    "region": "Americas"
+  },
+  {
+    "area": 27750.0,
+    "gini": 59.2,
+    "name": "Haiti",
+    "region": "Americas"
+  },
+  {
+    "area": 412.0,
+    "gini": null,
+    "name": "Heard Island and McDonald Islands",
+    "region": ""
+  },
+  {
+    "area": 0.44,
+    "gini": null,
+    "name": "Holy See",
+    "region": "Europe"
+  },
+  {
+    "area": 112492.0,
+    "gini": 57.0,
+    "name": "Honduras",
+    "region": "Americas"
+  },
+  {
+    "area": 1104.0,
+    "gini": 53.3,
+    "name": "Hong Kong",
+    "region": "Asia"
+  },
+  {
+    "area": 93028.0,
+    "gini": 31.2,
+    "name": "Hungary",
+    "region": "Europe"
+  },
+  {
+    "area": 103000.0,
+    "gini": null,
+    "name": "Iceland",
+    "region": "Europe"
+  },
+  {
+    "area": 3287590.0,
+    "gini": 33.4,
+    "name": "India",
+    "region": "Asia"
+  },
+  {
+    "area": 1904569.0,
+    "gini": 34.0,
+    "name": "Indonesia",
+    "region": "Asia"
+  },
+  {
+    "area": 322463.0,
+    "gini": 41.5,
+    "name": "Côte d'Ivoire",
+    "region": "Africa"
+  },
+  {
+    "area": 1648195.0,
+    "gini": 38.3,
+    "name": "Iran (Islamic Republic of)",
+    "region": "Asia"
+  },
+  {
+    "area": 438317.0,
+    "gini": 30.9,
+    "name": "Iraq",
+    "region": "Asia"
+  },
+  {
+    "area": 70273.0,
+    "gini": 34.3,
+    "name": "Ireland",
+    "region": "Europe"
+  },
+  {
+    "area": 572.0,
+    "gini": null,
+    "name": "Isle of Man",
+    "region": "Europe"
+  },
+  {
+    "area": 20770.0,
+    "gini": 39.2,
+    "name": "Israel",
+    "region": "Asia"
+  },
+  {
+    "area": 301336.0,
+    "gini": 36.0,
+    "name": "Italy",
+    "region": "Europe"
+  },
+  {
+    "area": 10991.0,
+    "gini": 45.5,
+    "name": "Jamaica",
+    "region": "Americas"
+  },
+  {
+    "area": 377930.0,
+    "gini": 38.1,
+    "name": "Japan",
+    "region": "Asia"
+  },
+  {
+    "area": 116.0,
+    "gini": null,
+    "name": "Jersey",
+    "region": "Europe"
+  },
+  {
+    "area": 89342.0,
+    "gini": 35.4,
+    "name": "Jordan",
+    "region": "Asia"
+  },
+  {
+    "area": 2724900.0,
+    "gini": 29.0,
+    "name": "Kazakhstan",
+    "region": "Asia"
+  },
+  {
+    "area": 580367.0,
+    "gini": 47.7,
+    "name": "Kenya",
+    "region": "Africa"
+  },
+  {
+    "area": 811.0,
+    "gini": null,
+    "name": "Kiribati",
+    "region": "Oceania"
+  },
+  {
+    "area": 17818.0,
+    "gini": null,
+    "name": "Kuwait",
+    "region": "Asia"
+  },
+  {
+    "area": 199951.0,
+    "gini": 36.2,
+    "name": "Kyrgyzstan",
+    "region": "Asia"
+  },
+  {
+    "area": 236800.0,
+    "gini": 36.7,
+    "name": "Lao People's Democratic Republic",
+    "region": "Asia"
+  },
+  {
+    "area": 64559.0,
+    "gini": 36.6,
+    "name": "Latvia",
+    "region": "Europe"
+  },
+  {
+    "area": 10452.0,
+    "gini": null,
+    "name": "Lebanon",
+    "region": "Asia"
+  },
+  {
+    "area": 30355.0,
+    "gini": 52.5,
+    "name": "Lesotho",
+    "region": "Africa"
+  },
+  {
+    "area": 111369.0,
+    "gini": 38.2,
+    "name": "Liberia",
+    "region": "Africa"
+  },
+  {
+    "area": 1759540.0,
+    "gini": null,
+    "name": "Libya",
+    "region": "Africa"
+  },
+  {
+    "area": 160.0,
+    "gini": null,
+    "name": "Liechtenstein",
+    "region": "Europe"
+  },
+  {
+    "area": 65300.0,
+    "gini": 37.6,
+    "name": "Lithuania",
+    "region": "Europe"
+  },
+  {
+    "area": 2586.0,
+    "gini": 30.8,
+    "name": "Luxembourg",
+    "region": "Europe"
+  },
+  {
+    "area": 30.0,
+    "gini": null,
+    "name": "Macau",
+    "region": "Asia"
+  },
+  {
+    "area": 25713.0,
+    "gini": 43.2,
+    "name": "Macedonia (the former Yugoslav Republic of)",
+    "region": "Europe"
+  },
+  {
+    "area": 587041.0,
+    "gini": 44.1,
+    "name": "Madagascar",
+    "region": "Africa"
+  },
+  {
+    "area": 118484.0,
+    "gini": 39.0,
+    "name": "Malawi",
+    "region": "Africa"
+  },
+  {
+    "area": 330803.0,
+    "gini": 46.2,
+    "name": "Malaysia",
+    "region": "Asia"
+  },
+  {
+    "area": 300.0,
+    "gini": 37.4,
+    "name": "Maldives",
+    "region": "Asia"
+  },
+  {
+    "area": 1240192.0,
+    "gini": 33.0,
+    "name": "Mali",
+    "region": "Africa"
+  },
+  {
+    "area": 316.0,
+    "gini": null,
+    "name": "Malta",
+    "region": "Europe"
+  },
+  {
+    "area": 181.0,
+    "gini": null,
+    "name": "Marshall Islands",
+    "region": "Oceania"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Martinique",
+    "region": "Americas"
+  },
+  {
+    "area": 1030700.0,
+    "gini": 40.5,
+    "name": "Mauritania",
+    "region": "Africa"
+  },
+  {
+    "area": 2040.0,
+    "gini": null,
+    "name": "Mauritius",
+    "region": "Africa"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Mayotte",
+    "region": "Africa"
+  },
+  {
+    "area": 1964375.0,
+    "gini": 47.0,
+    "name": "Mexico",
+    "region": "Americas"
+  },
+  {
+    "area": 702.0,
+    "gini": null,
+    "name": "Micronesia (Federated States of)",
+    "region": "Oceania"
+  },
+  {
+    "area": 33846.0,
+    "gini": 33.0,
+    "name": "Moldova (Republic of)",
+    "region": "Europe"
+  },
+  {
+    "area": 2.02,
+    "gini": null,
+    "name": "Monaco",
+    "region": "Europe"
+  },
+  {
+    "area": 1564110.0,
+    "gini": 36.5,
+    "name": "Mongolia",
+    "region": "Asia"
+  },
+  {
+    "area": 13812.0,
+    "gini": 30.0,
+    "name": "Montenegro",
+    "region": "Europe"
+  },
+  {
+    "area": 102.0,
+    "gini": null,
+    "name": "Montserrat",
+    "region": "Americas"
+  },
+  {
+    "area": 446550.0,
+    "gini": 40.9,
+    "name": "Morocco",
+    "region": "Africa"
+  },
+  {
+    "area": 801590.0,
+    "gini": 45.7,
+    "name": "Mozambique",
+    "region": "Africa"
+  },
+  {
+    "area": 676578.0,
+    "gini": null,
+    "name": "Myanmar",
+    "region": "Asia"
+  },
+  {
+    "area": 825615.0,
+    "gini": 63.9,
+    "name": "Namibia",
+    "region": "Africa"
+  },
+  {
+    "area": 21.0,
+    "gini": null,
+    "name": "Nauru",
+    "region": "Oceania"
+  },
+  {
+    "area": 147181.0,
+    "gini": 32.8,
+    "name": "Nepal",
+    "region": "Asia"
+  },
+  {
+    "area": 41850.0,
+    "gini": 30.9,
+    "name": "Netherlands",
+    "region": "Europe"
+  },
+  {
+    "area": 18575.0,
+    "gini": null,
+    "name": "New Caledonia",
+    "region": "Oceania"
+  },
+  {
+    "area": 270467.0,
+    "gini": 36.2,
+    "name": "New Zealand",
+    "region": "Oceania"
+  },
+  {
+    "area": 130373.0,
+    "gini": 40.5,
+    "name": "Nicaragua",
+    "region": "Americas"
+  },
+  {
+    "area": 1267000.0,
+    "gini": 34.6,
+    "name": "Niger",
+    "region": "Africa"
+  },
+  {
+    "area": 923768.0,
+    "gini": 48.8,
+    "name": "Nigeria",
+    "region": "Africa"
+  },
+  {
+    "area": 260.0,
+    "gini": null,
+    "name": "Niue",
+    "region": "Oceania"
+  },
+  {
+    "area": 36.0,
+    "gini": null,
+    "name": "Norfolk Island",
+    "region": "Oceania"
+  },
+  {
+    "area": 120538.0,
+    "gini": null,
+    "name": "Korea (Democratic People's Republic of)",
+    "region": "Asia"
+  },
+  {
+    "area": 464.0,
+    "gini": null,
+    "name": "Northern Mariana Islands",
+    "region": "Oceania"
+  },
+  {
+    "area": 323802.0,
+    "gini": 25.8,
+    "name": "Norway",
+    "region": "Europe"
+  },
+  {
+    "area": 309500.0,
+    "gini": null,
+    "name": "Oman",
+    "region": "Asia"
+  },
+  {
+    "area": 881912.0,
+    "gini": 30.0,
+    "name": "Pakistan",
+    "region": "Asia"
+  },
+  {
+    "area": 459.0,
+    "gini": null,
+    "name": "Palau",
+    "region": "Oceania"
+  },
+  {
+    "area": null,
+    "gini": 35.5,
+    "name": "Palestine, State of",
+    "region": "Asia"
+  },
+  {
+    "area": 75417.0,
+    "gini": 51.9,
+    "name": "Panama",
+    "region": "Americas"
+  },
+  {
+    "area": 462840.0,
+    "gini": 50.9,
+    "name": "Papua New Guinea",
+    "region": "Oceania"
+  },
+  {
+    "area": 406752.0,
+    "gini": 52.4,
+    "name": "Paraguay",
+    "region": "Americas"
+  },
+  {
+    "area": 1285216.0,
+    "gini": 48.1,
+    "name": "Peru",
+    "region": "Americas"
+  },
+  {
+    "area": 342353.0,
+    "gini": 43.0,
+    "name": "Philippines",
+    "region": "Asia"
+  },
+  {
+    "area": 47.0,
+    "gini": null,
+    "name": "Pitcairn",
+    "region": "Oceania"
+  },
+  {
+    "area": 312679.0,
+    "gini": 34.1,
+    "name": "Poland",
+    "region": "Europe"
+  },
+  {
+    "area": 92090.0,
+    "gini": 38.5,
+    "name": "Portugal",
+    "region": "Europe"
+  },
+  {
+    "area": 8870.0,
+    "gini": null,
+    "name": "Puerto Rico",
+    "region": "Americas"
+  },
+  {
+    "area": 11586.0,
+    "gini": 41.1,
+    "name": "Qatar",
+    "region": "Asia"
+  },
+  {
+    "area": 10908.0,
+    "gini": null,
+    "name": "Republic of Kosovo",
+    "region": "Europe"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Réunion",
+    "region": "Africa"
+  },
+  {
+    "area": 238391.0,
+    "gini": 30.0,
+    "name": "Romania",
+    "region": "Europe"
+  },
+  {
+    "area": 17124442,
+    "gini": 40.1,
+    "name": "Russian Federation",
+    "region": "Europe"
+  },
+  {
+    "area": 26338.0,
+    "gini": 50.8,
+    "name": "Rwanda",
+    "region": "Africa"
+  },
+  {
+    "area": 21.0,
+    "gini": null,
+    "name": "Saint Barthélemy",
+    "region": "Americas"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "region": "Africa"
+  },
+  {
+    "area": 261.0,
+    "gini": null,
+    "name": "Saint Kitts and Nevis",
+    "region": "Americas"
+  },
+  {
+    "area": 616.0,
+    "gini": 42.6,
+    "name": "Saint Lucia",
+    "region": "Americas"
+  },
+  {
+    "area": 53.0,
+    "gini": null,
+    "name": "Saint Martin (French part)",
+    "region": "Americas"
+  },
+  {
+    "area": 242.0,
+    "gini": null,
+    "name": "Saint Pierre and Miquelon",
+    "region": "Americas"
+  },
+  {
+    "area": 389.0,
+    "gini": null,
+    "name": "Saint Vincent and Grenadines",
+    "region": "Americas"
+  },
+  {
+    "area": 2842.0,
+    "gini": null,
+    "name": "Samoa",
+    "region": "Oceania"
+  },
+  {
+    "area": 61.0,
+    "gini": null,
+    "name": "San Marino",
+    "region": "Europe"
+  },
+  {
+    "area": 964.0,
+    "gini": 50.8,
+    "name": "Sao Tome and Principe",
+    "region": "Africa"
+  },
+  {
+    "area": 2149690.0,
+    "gini": null,
+    "name": "Saudi Arabia",
+    "region": "Asia"
+  },
+  {
+    "area": 196722.0,
+    "gini": 39.2,
+    "name": "Senegal",
+    "region": "Africa"
+  },
+  {
+    "area": 88361.0,
+    "gini": 27.8,
+    "name": "Serbia",
+    "region": "Europe"
+  },
+  {
+    "area": 452.0,
+    "gini": 65.8,
+    "name": "Seychelles",
+    "region": "Africa"
+  },
+  {
+    "area": 71740.0,
+    "gini": 42.5,
+    "name": "Sierra Leone",
+    "region": "Africa"
+  },
+  {
+    "area": 710.0,
+    "gini": 48.1,
+    "name": "Singapore",
+    "region": "Asia"
+  },
+  {
+    "area": 34.0,
+    "gini": null,
+    "name": "Sint Maarten (Dutch part)",
+    "region": "Americas"
+  },
+  {
+    "area": 49037.0,
+    "gini": 26.0,
+    "name": "Slovakia",
+    "region": "Europe"
+  },
+  {
+    "area": 20273.0,
+    "gini": 31.2,
+    "name": "Slovenia",
+    "region": "Europe"
+  },
+  {
+    "area": 28896.0,
+    "gini": null,
+    "name": "Solomon Islands",
+    "region": "Oceania"
+  },
+  {
+    "area": 637657.0,
+    "gini": null,
+    "name": "Somalia",
+    "region": "Africa"
+  },
+  {
+    "area": 1221037.0,
+    "gini": 63.1,
+    "name": "South Africa",
+    "region": "Africa"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "South Georgia and the South Sandwich Islands",
+    "region": "Americas"
+  },
+  {
+    "area": 100210.0,
+    "gini": 31.3,
+    "name": "Republic of Korea",
+    "region": "Asia"
+  },
+  {
+    "area": 619745.0,
+    "gini": 45.5,
+    "name": "South Sudan",
+    "region": "Africa"
+  },
+  {
+    "area": 505992.0,
+    "gini": 34.7,
+    "name": "Spain",
+    "region": "Europe"
+  },
+  {
+    "area": 65610.0,
+    "gini": 40.3,
+    "name": "Sri Lanka",
+    "region": "Asia"
+  },
+  {
+    "area": 1886068.0,
+    "gini": 35.3,
+    "name": "Sudan",
+    "region": "Africa"
+  },
+  {
+    "area": 163820.0,
+    "gini": 52.9,
+    "name": "Suriname",
+    "region": "Americas"
+  },
+  {
+    "area": null,
+    "gini": null,
+    "name": "Svalbard and Jan Mayen",
+    "region": "Europe"
+  },
+  {
+    "area": 17364.0,
+    "gini": 51.5,
+    "name": "Swaziland",
+    "region": "Africa"
+  },
+  {
+    "area": 450295.0,
+    "gini": 25.0,
+    "name": "Sweden",
+    "region": "Europe"
+  },
+  {
+    "area": 41284.0,
+    "gini": 33.7,
+    "name": "Switzerland",
+    "region": "Europe"
+  },
+  {
+    "area": 185180.0,
+    "gini": 35.8,
+    "name": "Syrian Arab Republic",
+    "region": "Asia"
+  },
+  {
+    "area": 36193.0,
+    "gini": null,
+    "name": "Taiwan",
+    "region": "Asia"
+  },
+  {
+    "area": 143100.0,
+    "gini": 30.8,
+    "name": "Tajikistan",
+    "region": "Asia"
+  },
+  {
+    "area": 945087.0,
+    "gini": 37.6,
+    "name": "Tanzania, United Republic of",
+    "region": "Africa"
+  },
+  {
+    "area": 513120.0,
+    "gini": 40.0,
+    "name": "Thailand",
+    "region": "Asia"
+  },
+  {
+    "area": 14874.0,
+    "gini": 31.9,
+    "name": "Timor-Leste",
+    "region": "Asia"
+  },
+  {
+    "area": 56785.0,
+    "gini": 34.4,
+    "name": "Togo",
+    "region": "Africa"
+  },
+  {
+    "area": 12.0,
+    "gini": null,
+    "name": "Tokelau",
+    "region": "Oceania"
+  },
+  {
+    "area": 747.0,
+    "gini": null,
+    "name": "Tonga",
+    "region": "Oceania"
+  },
+  {
+    "area": 5130.0,
+    "gini": 40.3,
+    "name": "Trinidad and Tobago",
+    "region": "Americas"
+  },
+  {
+    "area": 163610.0,
+    "gini": 41.4,
+    "name": "Tunisia",
+    "region": "Africa"
+  },
+  {
+    "area": 783562.0,
+    "gini": 39.0,
+    "name": "Turkey",
+    "region": "Asia"
+  },
+  {
+    "area": 488100.0,
+    "gini": 40.8,
+    "name": "Turkmenistan",
+    "region": "Asia"
+  },
+  {
+    "area": 948.0,
+    "gini": null,
+    "name": "Turks and Caicos Islands",
+    "region": "Americas"
+  },
+  {
+    "area": 26.0,
+    "gini": null,
+    "name": "Tuvalu",
+    "region": "Oceania"
+  },
+  {
+    "area": 241550.0,
+    "gini": 44.3,
+    "name": "Uganda",
+    "region": "Africa"
+  },
+  {
+    "area": 603700.0,
+    "gini": 26.4,
+    "name": "Ukraine",
+    "region": "Europe"
+  },
+  {
+    "area": 83600.0,
+    "gini": null,
+    "name": "United Arab Emirates",
+    "region": "Asia"
+  },
+  {
+    "area": 242900.0,
+    "gini": 34.0,
+    "name": "United Kingdom",
+    "region": "Europe"
+  },
+  {
+    "area": 9629091.0,
+    "gini": 48.0,
+    "name": "United States",
+    "region": "Americas"
+  },
+  {
+    "area": 181034.0,
+    "gini": 39.7,
+    "name": "Uruguay",
+    "region": "Americas"
+  },
+  {
+    "area": 447400.0,
+    "gini": 36.7,
+    "name": "Uzbekistan",
+    "region": "Asia"
+  },
+  {
+    "area": 12189.0,
+    "gini": null,
+    "name": "Vanuatu",
+    "region": "Oceania"
+  },
+  {
+    "area": 916445.0,
+    "gini": 44.8,
+    "name": "Venezuela (Bolivarian Republic of)",
+    "region": "Americas"
+  },
+  {
+    "area": 331212.0,
+    "gini": 35.6,
+    "name": "Viet Nam",
+    "region": "Asia"
+  },
+  {
+    "area": 142.0,
+    "gini": null,
+    "name": "Wallis and Futuna",
+    "region": "Oceania"
+  },
+  {
+    "area": 266000.0,
+    "gini": null,
+    "name": "Western Sahara",
+    "region": "Africa"
+  },
+  {
+    "area": 527968.0,
+    "gini": 37.7,
+    "name": "Yemen",
+    "region": "Asia"
+  },
+  {
+    "area": 752612.0,
+    "gini": 54.6,
+    "name": "Zambia",
+    "region": "Africa"
+  },
+  {
+    "area": 390757.0,
+    "gini": null,
+    "name": "Zimbabwe",
+    "region": "Africa"
+  }
+]
