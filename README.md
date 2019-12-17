@@ -1,4 +1,4 @@
-# visualizing-suicide-data
+# Visualizing suicide data
 
 
 ##### This project was created during a master's course in data visualization at the University of Reutlingen.
