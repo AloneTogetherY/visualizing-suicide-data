@@ -1,4 +1,4 @@
-# visualizing-suicide-data
+# Visualizing suicide data
 
 
 ##### This project was created during a master's course in data visualization at the University of Reutlingen.
@@ -11,6 +11,21 @@
 
 ##### To run the application:
 
-> Simply navigate to data/build/libs \
-> Run java -jar data-0.0.1-SNAPSHOT.jar \
-> Open localhost:1212 in browser 
+```Simply navigate to data/build/libs``` <br />
+```Run java -jar data-0.0.1-SNAPSHOT.jar``` <br />
+```Open localhost:1212 in browser```
+
+
+### A few screenshots of the application <br />
+
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/1.png" width="750" class="center">
+<br />
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/2.png" width="750" class="center">
+<br />
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/3.png" width="750" class="center">
+<br />
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/4.png" width="750" class="center">
+<br />
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/5.png" width="750" class="center">
+<br />
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/6.png" width="750" class="center">
