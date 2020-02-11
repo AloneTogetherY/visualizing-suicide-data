@@ -11,9 +11,9 @@
 
 ##### To run the application:
 
-> Simply navigate to data/build/libs \
-> Run java -jar data-0.0.1-SNAPSHOT.jar \
-> Open localhost:1212 in browser
+```Simply navigate to data/build/libs``` <br />
+```Run java -jar data-0.0.1-SNAPSHOT.jar``` <br />
+```Open localhost:1212 in browser```
 
 
 ### A few screenshots of the application <br />
