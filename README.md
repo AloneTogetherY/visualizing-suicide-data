@@ -18,14 +18,8 @@
 
 ### A few screenshots of the application <br />
 
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/1.png" width="750" class="center">
-<br />
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/2.png" width="750" class="center">
-<br />
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/3.png" width="750" class="center">
-<br />
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/4.png" width="750" class="center">
-<br />
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/5.png" width="750" class="center">
-<br />
-<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/6.png" width="750" class="center">
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/First_Page.gif"/><br />
+
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/Second_Page_Part1.gif" /><br />
+
+<img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/Second_Page_Part2.gif" />
