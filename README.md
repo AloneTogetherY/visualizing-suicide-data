@@ -18,8 +18,13 @@
 
 ### A few screenshots of the application <br />
 
+#### The start page shows the worldwide suicide statistics <br />
+
 <img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/First_Page.gif"/><br />
+
+#### The countries page shows the suicide statistics for each country <br />
 
 <img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/Second_Page_Part1.gif" /><br />
 
+#### Age and sex suicide statistics for the selected country <br />
 <img src="https://github.com/Yoan-D/visualizing-suicide-data/blob/master/data/screenshots/Second_Page_Part2.gif" />
