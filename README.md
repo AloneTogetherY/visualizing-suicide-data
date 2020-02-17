@@ -1,13 +1,10 @@
 # Visualizing suicide data
 
 
-##### This project was created during a master's course in data visualization at the University of Reutlingen.
-
-##### The suicide dataset used can be download [here](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016) 
-
-##### The REST-API and backend were built with Java Spring.
-
-##### The frontend uses a materialize-design template as well as a few visualization libraries such as: D3, GoogleCharts, ECharts and Plotly.
+This project was created during a master's course in data visualization at the University of Reutlingen. <br />
+The suicide dataset used can be download [here](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016) <br />
+The REST-API and backend were built with Java Spring. <br />
+The frontend uses a materialize-design template as well as a few visualization libraries such as: D3, GoogleCharts, ECharts and Plotly.
 
 ##### To run the application:
 
